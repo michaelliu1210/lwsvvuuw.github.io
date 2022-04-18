@@ -1,35 +1,182 @@
-<!DOCTYPE html>
-<html><head><meta charset="utf-8">
-  <title>Google</title>
-  <style>
-    html { background: #fff; margin: 0 1em; }
-    body { font: .8125em/1.5 arial, sans-serif; text-align: center; }
-    h1 { font-size: 1.5em; font-weight: normal; margin: 1em 0 0; }
-    p#footer { color: #767676; font-size: .77em; }
-    p#footer a { background: url(//www.google.cn/intl/zh-CN_cn/images/cn_icp.gif) top right no-repeat; padding: 5px 20px 5px 0; }
-    ul { margin: 2em; padding: 0; }
-    li { display: inline; padding: 0 2em; }
-    div { -moz-border-radius: 20px; -webkit-border-radius: 20px; border: 1px solid #ccc; border-radius: 20px; margin: 2em auto 1em; max-width: 650px; min-width: 544px; }
-    div:hover, div:hover * { cursor: pointer; }
-    div:hover { border-color: #999; }
-    div p { margin: .5em 0 1.5em; }
-    img { border: 0; }
-  </style>
-  </head><body><div>
-    <a href="http://www.google.com.hk/webhp?hl=zh-CN&amp;sourceid=cnhp">
-      <img src="//www.google.cn/landing/cnexp/google-search.png" alt="Google" width="586" height="257">
-    </a>
-    <h1><a href="http://www.google.com.hk/webhp?hl=zh-CN&amp;sourceid=cnhp"><strong id="target">google.com.hk</strong></a></h1>
-    <p>请收藏我们的网址
-  </p></div>
-  <ul>
-    <li><a href="http://translate.google.com/?sourceid=cnhp">翻译</a>
-  </li></ul>
-  <p id="footer">
-    ©2011 - <span>ICP证合字B2-20070004号</span>
-  <script nonce="">
-    var gcn=gcn||{};gcn.IS_IMAGES=(/images\.google\.cn/.exec(window.location)||window.location.hash=='#images'||window.location.hash=='images');gcn.HOMEPAGE_DEST='http://www.google.com.hk/webhp?hl=zh-CN&sourceid=cnhp';gcn.IMAGES_DEST='http://images.google.com.hk/imghp?'+'hl=zh-CN&sourceid=cnhp';gcn.DEST_URL=gcn.IS_IMAGES?gcn.IMAGES_DEST:gcn.HOMEPAGE_DEST;gcn.READABLE_HOMEPAGE_URL='google.com.hk';gcn.READABLE_IMAGES_URL='images.google.com.hk';gcn.redirectIfLocationHasQueryParams=function(){if(window.location.search&&/google\.cn/.exec(window.location)&&!/webhp/.exec(window.location)){window.location=String(window.location).replace('google.cn','google.com.hk')}}();gcn.replaceHrefsWithImagesUrl=function(){if(gcn.IS_IMAGES){var a=document.getElementsByTagName('a');for(var i=0,len=a.length;i<len;i++){if(a[i].href==gcn.HOMEPAGE_DEST){a[i].href=gcn.IMAGES_DEST}}}}();gcn.listen=function(a,e,b){if(a.addEventListener){a.addEventListener(e,b,false)}else if(a.attachEvent){var r=a.attachEvent('on'+e,b);return r}};gcn.stopDefaultAndProp=function(e){if(e&&e.preventDefault){e.preventDefault()}else if(window.event&&window.event.returnValue){window.eventReturnValue=false;return false}if(e&&e.stopPropagation){e.stopPropagation()}else if(window.event&&window.event.cancelBubble){window.event.cancelBubble=true;return false}};gcn.resetChildElements=function(a){var b=a.childNodes;for(var i=0,len=b.length;i<len;i++){gcn.listen(b[i],'click',gcn.stopDefaultAndProp)}};gcn.redirect=function(){window.location=gcn.DEST_URL};gcn.setInnerHtmlInEl=function(a){if(gcn.IS_IMAGES){var b=document.getElementById(a);if(b){b.innerHTML=b.innerHTML.replace(gcn.READABLE_HOMEPAGE_URL,gcn.READABLE_IMAGES_URL)}}};
-    gcn.listen(document, 'click', gcn.redirect);
-    gcn.setInnerHtmlInEl('target');
-  </script>
-</p></body></html>
+﻿<!DOCTYPE html>
+<html style="cursor:default" leftmargin=0 topmargin=0 οncοntextmenu='return false' οndragstart='return false' onselectstart ='return false' οnselect='document.selection.empty()' οncοpy='document.selection.empty()' onbeforecopy='return false' οnmοuseup='document.selection.empty()' ondragstart="return false;" oncontextmenu="return false;">
+<head>
+<meta charset="UTF-8"/>
+<title>Tanki Wiki编辑组</title> <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(font220418.ttf);
+   font-weight: bold;
+}
+img{border-radius: 0px;}
+#yimg{border-radius: 20px}
+html{
+   font-family: myFirstFont;
+}
+#head1{
+width: 100%;
+height: 61px;
+background-color: #1999a2ff;
+vertical-align: middle;
+box-shadow: 0 0 10px #000000;
+}
+#2{margin-left: 31px}
+body{
+background-color: #fff;}
+a{color: white}
+a{text-decoration:none} 
+a:hover{color: yellow}
+#nowin{color: #95ff99}
+
+#play1{
+width: 738px;
+height: 340px;
+background-color: #0fff0000;
+border-width: 5px;;border-radius: 25px;
+box-shadow: 0 0 10px #081839;border-color: rgb(8, 18, 39); /* 3 */
+}
+
+#tuwenban{
+color: #004400;
+}
+#tuwenban:hover{color: #888800;}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.9s;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: #008CBA; 
+  color: white; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008AFF;
+border: 2px solid #008AFF;
+  color: white;
+}
+
+
+.button3 {
+  background-color: #888; 
+  color: white; 
+  border: 2px solid #888;
+cursor:default;
+}
+
+.button3:hover {
+  background-color: #777;
+border: 2px solid #777;
+  color: white;
+}
+
+
+
+#nowin33{color: #95ff99;}
+
+.fimg {
+  float: left;
+}
+#play2{
+width: 738px;
+height: 240px;
+background-color: #0fff0000;
+border-width: 5px;;border-radius: 25px;
+box-shadow: 0 0 10px #081839;border-color: rgb(8, 18, 39); /* 3 */
+}
+
+</style>
+<script>
+document.onkeydown = function(){
+
+    if(window.event && window.event.keyCode == 123) {
+        alert;
+        event.keyCode=0;
+        event.returnValue=false;
+    }
+    if(window.event && window.event.keyCode == 13) {
+        window.event.keyCode = 505;
+    }
+    if(window.event && window.event.keyCode == 8) {
+        alert;
+        window.event.returnValue=false;
+    }
+
+}
+document.onpaste = function (event){
+if(window.event){
+event = window.event;
+}try{
+var the = event.srcElement;
+if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
+return false;
+}
+return true;
+}catch (e){
+return false;
+}
+}
+document.oncopy = function (event){
+if(window.event){
+event = window.event;
+}try{
+var the = event.srcElement;
+if(!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
+return false;
+}
+return true;
+}catch (e){
+return false;
+}
+}
+document.oncut = function (event){
+if(window.event){
+event = window.event;
+}try{
+var the = event.srcElement;
+if(!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
+return false;
+}
+return true;
+}catch (e){
+return false;
+}
+}
+document.onselectstart = function (event){
+if(window.event){
+event = window.event;
+}try{
+var the = event.srcElement;
+if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
+return false;
+}
+return true;
+} catch (e) {
+return false;
+}
+}</script>
+</head><b>
+<body>
+<div id="head1" style="position: fixed; left: 0px; top: 0px;z-index: 44921;color: white;font-size:26px;">
+<div style="margin-top: 11px;margin-left: 91px" id="2">
+
+<img src="svg.svg" height="39" style="border-radius: 0px:margin-top: 0px;position: fixed; left: 20px; top:10px;z-index: 44923;">
+<span id="nowin33">首页</span>&nbsp;&nbsp;&nbsp;<a href="Archives.html">档案馆</a>&nbsp;&nbsp;&nbsp;<a href="download.html">下载中心</a>&nbsp;&nbsp;&nbsp;<a href="mail.html">联系我们</a>&nbsp;&nbsp;&nbsp;
+</div>
+</div>
+<div align="center">
+<h1 style="font-size: 92px"><br>Wiki 编辑组 官方网站</h1>
+<h1>我们是来自4399-3D坦克论坛的Tanki Online Wiki编辑组</h1>
+<h1>这里是我们的小组官方网站，欢迎各位来宾的莅临</h1>
+</body></b></html>
