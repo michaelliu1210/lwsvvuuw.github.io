@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <html style="cursor:default" leftmargin=0 topmargin=0 οncοntextmenu='return false' οndragstart='return false' onselectstart ='return false' οnselect='document.selection.empty()' οncοpy='document.selection.empty()' onbeforecopy='return false' οnmοuseup='document.selection.empty()' ondragstart="return false;" oncontextmenu="return false;">
 <head>
-<meta charset="UTF-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" name="viewport" />
-<title>下载中心 - Tanki Wiki 编辑组</title> <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+<meta charset="UTF-8"/>
+<title>Tanki Wiki 编辑组</title> <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
 <style>
 @font-face {
    font-family: myFirstFont;
@@ -14,30 +14,37 @@ img{border-radius: 0px;}
 html{
    font-family: myFirstFont;
 }
-#head1{
+#hea21{
 width: 100%;
-height: 61px;
-background-color: #1999a2ff;
+height: 110px;
+background-color: rgb(109,117,142);
 vertical-align: middle;
 box-shadow: 0 0 10px #000000;
 }
 #2{margin-left: 31px}
 body{
 background-color: #fff;}
-a{color: white}
+a{color: #fff}
 a{text-decoration:none} 
-a:hover{color: yellow}
+a:hover{color: #ff0}
 #nowin{color: #95ff99}
 
 #play1{
-width: 89.99%;
-height: 499px;
+position: absolute;
+left: 0px;
+right: 0px;
+margin: auto;
+width: 738px;
+height: 340px;
 background-color: #0fff0000;
 border-width: 5px;;border-radius: 25px;
 box-shadow: 0 0 10px #081839;border-color: rgb(8, 18, 39); /* 3 */
 }
 
-
+#tuwenban{
+color: #004400;
+}
+#tuwenban:hover{color: #888800;}
 .button {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -80,9 +87,18 @@ border: 2px solid #777;
 
 
 
+#nowin33{color: #95ff99;}
 
-
-
+.fimg {
+  float: left;
+}
+#play2{
+width: 738px;
+height: 240px;
+background-color: #0fff0000;
+border-width: 5px;;border-radius: 25px;
+box-shadow: 0 0 10px #081839;border-color: rgb(8, 18, 39); /* 3 */
+}
 
 </style>
 <script>
@@ -153,49 +169,31 @@ return true;
 } catch (e) {
 return false;
 }
-}
-
-window.onload=function(){
-
-  document.addEventListener('touchstart',function (event) { 
-
-      if(event.touches.length>=2){ 
-
-        event.preventDefault(); 
-
-      } 
-
-  }) 
-
-   
-
-  document.addEventListener('touchmove',function (event) { 
-
-      if(event.touches.length>=2){ 
-
-        event.preventDefault(); 
-
-      } 
-
-  }) 
-
-   
-
-  document.addEventListener('touchend',function (event) { 
-
-      if(event.touches.length>=2){ 
-
-        event.preventDefault(); 
-
-      } 
-
-  }) 
-
-}
-
-</script>
+}</script>
+<!--<script>
+     
+    /*
+    PC:     Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+    移动端: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1
+    移动端: Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36
+    * */
+    // let userAgentInfo = navigator.userAgent;
+    // console.log(userAgentInfo);
+    function isPc() {
+        let userAgentInfo = navigator.userAgent;
+        if(/iphone/i.test(userAgentInfo)){
+            return false;
+        }else if(/android/i.test(userAgentInfo)){
+            return false;
+        }
+        return true;
+    }
+    if(!isPc()){
+        location.href = "http://3dtank.com";
+    }
+</script>-->
 </head><b>
-<body>
+<body align="center"><center>
 <div style="position: fixed; left: 0px; top: 0px;z-index: 44921;color: white;font-size:26px;width: 100%;
 height: 110px;
 background-color: rgb(109,117,142);
@@ -204,17 +202,18 @@ box-shadow: 0 0 10px #000000;" align="left">
 <div style="margin-top: 11px;margin-left: 91px" id="2">
 
 
-<span id="nowin33"><img src="svg.svg" height="56px" style="border-radius: 0px:margin-top: 0px;position: fixed; left: 30px; top:24px;z-index: 44923;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;<a href="Archives.html"><img src="mobile0.png" height="86px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="download.html"><img src="mobile2.png" height="86px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mail.html"><img src="mobile1.png" height="86px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span id="nowin33"><img src="svg.svg" height="56" style="border-radius: 0px:margin-top: 0px;position: fixed; left: 30px; top:24px;z-index: 44923;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;<a href="Archives.html"><img src="mobile0.png" height="86"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="m.download.html"><img src="mobile2.png" height="86"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mail.html"><img src="mobile1.png" height="86"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 </div>
 <div align="center">
-<h1 style="font-size: 43px"><br>欢迎来到Wiki编辑组下载中心</h1>
+<div align="center">
+<h1 style="font-size: 63px"><br>欢迎来到Wiki编辑组下载中心</h1>
 <h1 style="font-size: 24px">这里拥有Wiki编辑组研发的黑科技，欢迎大家下载使用</h1><br><br><br><br>
 </div><center>
 <div id="play1"><br>
 <img src="online.png" id="yimg"><br>
 <span id="1" style="font-size: 28px;">国服H5版本客户端</span>
-<br><span id="1" style="font-size: 12px;">仅支持国服官网账户登录， 与浏览器相比，游戏性能有所增加</span>
+<br><span id="1" style="font-size: 13px;">仅支持国服官网账户登录， 与浏览器相比，游戏性能有所增加</span>
 <br>
 <br>
 
@@ -252,9 +251,5 @@ box-shadow: 0 0 10px #000000;" align="left">
 
 
 <br><br><br>
-
-
-
-
-
-</div></center></body></b></html>
+</div><br><br>
+</body></b></html>
