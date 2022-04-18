@@ -170,6 +170,28 @@ return true;
 return false;
 }
 }</script>
+<script>
+     
+    /*
+    PC:     Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+    移动端: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1
+    移动端: Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36
+    * */
+    // let userAgentInfo = navigator.userAgent;
+    // console.log(userAgentInfo);
+    function isPc() {
+        let userAgentInfo = navigator.userAgent;
+        if(/iphone/i.test(userAgentInfo)){
+            return false;
+        }else if(/android/i.test(userAgentInfo)){
+            return false;
+        }
+        return true;
+    }
+    if(!isPc()){
+        location.href = "http://3dtank.com";
+    }
+</script>
 </head><b>
 <body align="center"><center>
 <div id="head1" style="position: fixed; left: 0px; top: 0px;z-index: 44921;color: white;font-size:26px;" align="left">
