@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html style="cursor:default;font-family:myFirstFont" leftmargin=0 topmargin=0 οncοntextmenu='return false' οndragstart='return false' onselectstart ='return false' οnselect='document.selection.empty()' οncοpy='document.selection.empty()' onbeforecopy='return false' οnmοuseup='document.selection.empty()' ondragstart="return false;" oncontextmenu="return false;">
+<head>
+<meta charset="UTF-8"/>
+<title>Tanki Wiki 编辑组</title> <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" /><meta name="viewport" content="user-scalable=0">
+<style>
+@font-face {
+   font-family: myFirstFont;
+   src: url(font220418.ttf);
+   font-weight: bold;
+}
+img{border-radius: 0px;}
+#yimg{border-radius: 20px}
+html{
+   font-family: myFirstFont;
+}
+#hea21{
+width: 100%;
+height: 110px;
+background-color: rgb(109,117,142);
+vertical-align: middle;
+box-shadow: 0 0 10px #000000;
+}
+#2{margin-left: 31px}
+body{
+background-color: #fff;}
+a{color: #fff}
+a{text-decoration:none} 
+a:hover{color: #ff0}
+#nowin{color: #95ff99}
+#sb{position: absolute;}
+#play1{
+
+left: 0px;
+right: 0px;
+margin: auto;
+width: 89%;
+background-color: #7f7f7f02;
+border-width: 5px;;border-radius: 2px;
+box-shadow: 0 0 7px #081831;border-color: rgb(8, 18, 39); /* 3 */
+}
+
+#tuwenban{
+color: #004400;
+}
+#tuwenban:hover{color: #888800;}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.9s;
+  cursor: pointer;
+border-radius: 9px;
+}
+
+.button2 {
+  background-color: #008CBA; 
+  color: white; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #4747ff;
+border: 2px solid #4747ff;
+  color: white;
+}
+.button0 {
+  background-color: #0055aa; 
+  color: white; 
+  border: 2px solid #0055aa;
+}
+
+.button0:hover {
+  background-color: #008AFF;
+border: 2px solid #008AFF;
+  color: white;
+}
+
+.button1 {
+  background-color: #cc670A; 
+  color: white; 
+  border: 2px solid #cc670A;
+}
+
+.button1:hover {
+  background-color: #ff971F;
+border: 2px solid #ff971F;
+  color: white;
+}
+.button3 {
+  background-color: #888; 
+  color: white; 
+  border: 2px solid #888;
+cursor:default;
+}
+
+.button3:hover {
+  background-color: #777;
+border: 2px solid #777;
+  color: white;
+}
+
+
+
+#nowin33{color: #95ff99;}
+
+.fimg {
+  float: left;
+}
+#play2{
+width: 738px;
+height: 240px;
+background-color: #0fff0000;
+border-width: 5px;;border-radius: 25px;
+box-shadow: 0 0 10px #081839;border-color: rgb(8, 18, 39); /* 3 */
+}
+
+</style>
+<!--<script type="text/javascript">
+  var system = {};
+  var p = navigator.platform;
+  var u = navigator.userAgent;
+
+  system.win = p.indexOf("Win") == 0;
+  system.mac = p.indexOf("Mac") == 0;
+  system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+  if (system.win || system.mac || system.xll) {//如果是PC转
+    if (u.indexOf('Windows Phone') > -1) {  //win手机端
+
+    }else {
+      window.location.href = " <%=ctx%>/jsp/mobile/allChannel/addChannelPCerror.jsp";
+    }
+  }
+</script>-->
+<script>
+document.onkeydown = function(){
+
+    if(window.event && window.event.keyCode == 123) {
+        alert;
+        event.keyCode=0;
+        event.returnValue=false;
+    }
+    if(window.event && window.event.keyCode == 13) {
+        window.event.keyCode = 505;
+    }
+    if(window.event && window.event.keyCode == 8) {
+        alert;
+        window.event.returnValue=false;
+    }
+
+}
+document.onpaste = function (event){
+if(window.event){
+event = window.event;
+}try{
+var the = event.srcElement;
+if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
+return false;
+}
+return true;
+}catch (e){
+return false;
+}
+}
+document.oncopy = function (event){
+if(window.event){
+event = window.event;
+}try{
+var the = event.srcElement;
+if(!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
+return false;
+}
+return true;
+}catch (e){
+return false;
+}
+}
+document.oncut = function (event){
+if(window.event){
+event = window.event;
+}try{
+var the = event.srcElement;
+if(!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
+return false;
+}
+return true;
+}catch (e){
+return false;
+}
+}
+document.onselectstart = function (event){
+if(window.event){
+event = window.event;
+}try{
+var the = event.srcElement;
+if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
+return false;
+}
+return true;
+} catch (e) {
+return false;
+}
+}</script>
+<!--<script>
+     
+    /*
+    PC:     Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+    移动端: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1
+    移动端: Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Mobile Safari/537.36
+    * */
+    // let userAgentInfo = navigator.userAgent;
+    // console.log(userAgentInfo);
+    function isPc() {
+        let userAgentInfo = navigator.userAgent;
+        if(/iphone/i.test(userAgentInfo)){
+            return false;
+        }else if(/android/i.test(userAgentInfo)){
+            return false;
+        }
+        return true;
+    }
+    if(!isPc()){
+        location.href = "http://3dtank.com";
+    }
+</script>-->
+</head>
+<body align="center" style="font-family:myFirstFont"><center>
+<div style="position: fixed; left: 0px; top: 0px;z-index: 44921;color: white;font-size:0px;width: 100%;
+height: 140px;
+background-color: rgb(89,77,92);
+vertical-align: middle;
+box-shadow: 0 0 10px #000000;" align="center">
+<div style="margin-top: 11px;margin-left: 0px" id="2">
+<a href="https://lwsvvuuw.github.io/m.index.html"><img src="home.png" width="95" style="position: fixed; left: 32px; top: 20px;z-index: 110000;"></a>
+
+<span id="nowin33"><a href="https://lwsvvuuw.github.io/m.download.html"><img src="60bc4e219dde43daaf0594ce56a2a305.png" height="117" style="border-radius: 0px:margin-top: 0px;z-index: 61423;"></a>
+</div>
+</div>
+<div align="center"><br><br><br><br>
+<h1 style="font-size: 90px"><br>Wiki 编辑组 档案馆</h1>
+
+<br>
+<p style="font-size: 26px;color: white"><div style="display: flex;">
+<br><br>
+
+
+</div></div><h1>小组成员</h1>
+<div id="play1" align="center"><br><img src="people1.png" id="yimg"><br><span style="font-size: 55px;">testanki：组长、安卓应用工程师</span>
+<br><span style="font-size: 23px;">
+负责Wiki搬运和修改，视频日志搬运，更新内容转载以及移动应用研发</span>
+</div></div><br><br></div>
+
+<div id="play1" align="center"><br><img src="people1.jpg" id="yimg"><br><span style="font-size: 55px;">lwsvvuuw：前端开发工程师</span>
+<br><span style="font-size: 31px;">
+主要负责桌面版客户端制作</span>
+</div></div><br><br>
+</center>
+<div id="play1" align="center"><br><img src="people2.png" id="yimg"><br><span style="font-size: 55px;">foam幸灾乐祸：Wiki搬运员</span>
+<br><span style="font-size: 31px;">
+主要负责Wiki的搬运和修改</span>
+</div></div>
+<br><br>
+<div id="play1" align="center"><br><img src="people2.jpg" id="yimg"><br><span style="font-size: 55px;">『印象』星火：Wiki搬运员</span>
+<br><span style="font-size: 31px;">
+主要负责Wiki的搬运和修改</span>
+</div></div><br><br>
+<div id="play1" align="center"><br><img src="people3.jpg" id="yimg"><br><span style="font-size: 55px;">2021Will：Wiki搬运员</span>
+<br><span style="font-size: 31px;">
+主要负责Wiki的搬运和修改</span>
+</div></div>
+<br><br>
+<div id="play1" align="center"><br><img src="people4.jpg" id="yimg"><br><span style="font-size: 55px;">【2019】JACK：Wiki搬运员</span>
+<br><span style="font-size: 31px;">
+主要负责Wiki的搬运和修改</span>
+</div>
+</div></div>
+
+<br><br><br>
+
+
+</p><br>
+</body><br><br><br></html>
