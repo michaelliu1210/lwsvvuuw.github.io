@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html scrolling="no" leftmargin=0 topmargin=0 οncοntextmenu='return false' οndragstart='return false' onselectstart ='return false' οnselect='document.selection.empty()' οncοpy='document.selection.empty()' onbeforecopy='return false' οnmοuseup='document.selection.empty()' ondragstart="return false;" oncontextmenu="return false;">
+<head>
+<meta charset="UTF-8"/>
+<style>
+
+html{height:100%}
+body{
+
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+img.top {
+  vertical-align: top;
+}
+
+img.middle {
+  vertical-align: middle;
+}
+
+img.bottom {
+  vertical-align: bottom;
+}
+p {
+  vertical-align: middle;
+}
+a:hover{
+color: #FFFF00
+}
+a{
+color: #FFFFFF;
+transition: color 0.4s;
+}
+a {text-decoration: none}
+@font-face {
+  font-family: myFirstFont;
+  src: url(html.ttf);
+}
+img {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #66ffa9;
+  width: 210px;
+  height: 135px;
+  background-color: #fff;
+border-radius: 30px;
+transition: border-color 0.33s;
+transform: translate(0px, 0px);
+}
+
+img:hover{
+ border-color: #0069ff;
+}
+div{
+display: inline
+}
+#a{
+cursor:default
+}
+</style>
+<script  type="text/javascript">
+document.onkeydown = function() {
+	var e = window.event || arguments[0];
+	if (e.keyCode == 123) {
+		;
+		return false;
+	} else if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+		;
+		return false;
+	} else if ((e.ctrlKey) && (e.keyCode == 85)) {
+		;
+		return false;
+	} else if ((e.ctrlKey) && (e.keyCode == 83)) {
+		;
+		return false;
+	}
+}
+// 屏蔽鼠标右键
+document.oncontextmenu = function() {
+	;
+	return false;
+}
+window.onload = function() {
+// 代码
+}
+
+</script>
+<script type="text/javascript">
+((function() {
+	var callbacks = [],
+	timeLimit = 50,
+	open = false;
+	setInterval(loop, 1);
+	return {
+		addListener: function(fn) {
+			callbacks.push(fn);
+		},
+		cancleListenr: function(fn) {
+			callbacks = callbacks.filter(function(v) {
+				return v !== fn;
+			});
+		}
+	}
+	function loop() {
+		var startTime = new Date();
+		debugger;
+		if (new Date() - startTime > timeLimit) {
+			if (!open) {
+				callbacks.forEach(function(fn) {
+					fn.call(null);
+				});
+			}
+			open = true;
+			window.stop();
+			alert);
+			window.location.reload();
+		} else {
+			open = false;
+		}
+	}
+})())
+ 
+.addListener(function() {
+	window.location.reload();
+});
+</script>
+<span style="position: fixed; left: 17px; top: 17px;z-index: 10000;"><span style="position: fixed;font-size:55px;font-family:simhei;color:white"><!--<img src="svg.svg" width="79"><img src="icon.svg">--></span></span>
+</head>
+<body background="b.png" style="background-attachment:fixed;color:white;font-family:simhei" align="center">
+
+<center>
+
+<h1 style="cursor:default">炮塔</h1>
+<a href="../35.html" target="_parent"><img id="tm" src="m1.png"></a> 
+<a href="../36.html" target="_parent"><img src="m2.png" id="tm"></a> 
+<a href="../37.html" target="_parent"><img id="tm" src="m3.png"></a> 
+<a href="../38.html" target="_parent"><img id="tm" src="m4.png"></a> <br><br>
+<a href="../39.html" target="_parent"><img id="tm" src="m5.png"></a>
+<a href="../40.html" target="_parent"><img id="tm" src="m6.png"></a>
+<a href="../41.html" target="_parent"><img id="tm" src="m7.png"></a>
+<a href="../42.html" target="_parent"><img id="tm" src="m8.png"></a><br><br>
+<a href="../43.html" target="_parent"><img id="tm" src="m9.png"></a>
+<a href="../44.html" target="_parent"><img id="tm" src="m10.png"></a>
+<a href="../45.html" target="_parent"><img id="tm" src="m11.png"></a>
+<a href="../46.html" target="_parent"><img id="tm" src="m12.png"></a><br><br>
+<a href="../47.html" target="_parent"><img id="tm" src="m13.png"></a>
+<a href="../48.html" target="_parent"><img id="tm" src="m14.png"></a>
+<a href="../49.html" target="_parent"><img id="tm" src="m15.png"></a>
+<a href="../50.html" target="_parent"><img id="tm" src="m16.png"></a><br><br>
+<a href="../51.html" target="_parent"><img id="tm" src="m17.png"></a>
+<a href="../52.html" target="_parent"><img id="tm" src="msnow.png"></a>
+<h1 style="cursor:default">底盘</h1>
+<a href="../09.html" target="_parent"><img id="tm" src="m18.png"></a>
+<a href="../10.html" target="_parent"><img id="tm" src="m19.png"></a>
+<a href="../11.html" target="_parent"><img id="tm" src="m20.png"></a>
+<a href="../12.html" target="_parent"><img id="tm" src="m22.png"></a><br><br>
+<a href="../13.html" target="_parent"><img id="tm" src="m21.png"></a>
+<a href="../14.html" target="_parent"><img id="tm" src="m23.png"></a>
+<a href="../15.html" target="_parent"><img id="tm" src="m24.png"></a>
+<a href="../16.html" target="_parent"><img id="tm" src="m25.png"></a><br><br>
+<a href="../17.html" target="_parent"><img id="tm" src="m26.png"></a>
+<a href="../18.html" target="_parent"><img id="tm" src="m27.png"></a>
+<a href="../19.html" target="_parent"><img id="tm" src="m28.png"></a>
+<a href="../20.html" target="_parent"><img id="tm" src="m29.png"></a><br><br>
+<h1 style="cursor:default">道具</h1>
+<a href="../21.html" target="_parent"><img src="m30.png" id="tm"></a>
+<a href="../22.html" target="_parent"><img id="tm" src="m31.png"></a>
+<a href="../23.html" target="_parent"><img id="tm" src="m32.png"></a>
+<a href="../24.html" target="_parent"><img id="tm" src="m33.png"></a><br><br>
+<a href="../25.html" target="_parent"><img id="tm" src="m34.png"></a>
+<a href="../26.html" target="_parent"><img id="tm" src="m35.png"></a>
+<a href="../28.html" target="_parent"><img id="tm" src="m36.png"></a>
+<a href="../27.html" target="_parent"><img id="tm" src="m37.png"></a><br><br>
+<h1 style="cursor:default">经济</h1>
+<a href="../29.html" target="_parent"><img id="tm" src="m39.png"></a>
+<a href="../30.html" target="_parent"><img id="tm" src="m38.png"></a>
+<a href="../31.html" target="_parent"><img id="tm" src="m40.png"></a><br><br>
+<a href="../32.html" target="_parent"><img id="tm" src="m41.png"></a>
+<a href="../33.html" target="_parent"><img id="tm" src="m42.png"></a>
+<a href="../34.html" target="_parent"><img id="tm" src="m43.png"></a><br><br>
+<h1 style="cursor:default">游戏模式</h1>
+<a href="../01.html" target="_parent"><img src="mtdm.png" id="tm"></a>
+<a href="../08.html" target="_parent"><img src="mdm.png" id="tm"></a>
+<a href="../02.html" target="_parent"><img src="mcp.png" id="tm"></a>
+<a href="../03.html" target="_parent"><img src="mctf.png" id="tm"></a><br><br>
+<a href="../04.html" target="_parent"><img src="masl.png" id="tm"></a>
+<a href="../05.html" target="_parent"><img src="mrgb.png" id="tm"></a>
+<a href="../06.html" target="_parent"><img src="mtjr.png" id="tm"></a>
+<a href="../07.html" target="_parent"><img src="msge.png" id="tm"></a>
+<h1 style="cursor:default">其它</h1>
+<a href="../53.html" target="_parent"><img src="m44.png" id="tm"></a>
+<a href="装备改造.html"><img src="m45.png" id="tm"></a>
+<a href="无人机.html"><img src="m46.png" id="tm"></a>
+<a href="等级.html"><img src="m47.png" id="tm"></a><br><br>
+<a href="过速装置.html"><img src="m50.png" id="tm"></a>
+<a href="星级挑战.html"><img src="m48.png" id="tm"></a>
+<a href="射击效果.html"><img src="m49.png" id="tm"></a>
+<a href="迷彩.html"><img src="m51.png" id="tm"></a><br><br>
+<a href="pro.html"><img src="m52.png" id="tm"></a>
+<a href="皮肤.html"><img src="m53.png" id="tm"></a>
+<a href="防御模块.html"><img src="m54.png" id="tm"></a>
+<a href="温度.html"><img src="m55.png" id="tm"></a></center>
+<br>
+</body></html>
