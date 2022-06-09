@@ -4,7 +4,22 @@
 <!--2--><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 <meta charset="UTF-8"/>
 <title>Tanki Online Wiki 玩家编辑组</title> <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
-<style>
+<script type="text/javascript">
+  var system = {};
+  var p = navigator.platform;
+  var u = navigator.userAgent;
+
+  system.win = p.indexOf("Win") == 0;
+  system.mac = p.indexOf("Mac") == 0;
+  system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+  if (system.win || system.mac || system.xll) {//如果是PC转
+    if (u.indexOf('Windows Phone') > -1) {  //win手机端
+
+    }else {
+      window.location.href = " https://lwsvvuuw.pages.dev";
+    }
+  }
+</script><style>
 @font-face{
    font-family: myFirstFont;
    src: url('https://lwsvvuuw.github.io/font220418.ttf') format('truetype');
@@ -451,7 +466,7 @@ Wiki搬运
 
 <br><br>
 <br><br>
-<br><h1 style="font-size: 51px">我们的联系邮箱</h1>
+<br><h1 style="font-size: 51px">我们</h1>
 <div style="font-size:38px">testanki@qq.com<br>lwsvvuuw@outlook.com</div>
 
 
